@@ -1,5 +1,5 @@
-import type { Denops } from "https://deno.land/x/denops_std@v3.9.1/mod.ts";
-import { exists } from "https://deno.land/x/denops_std@v3.9.3/function/common.ts";
+import type { Denops } from "https://deno.land/x/denops_std@v3.12.0/mod.ts";
+import { exists } from "https://deno.land/x/denops_std@v3.12.0/function/common.ts";
 
 let setcmdline_exist: boolean | undefined;
 
