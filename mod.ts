@@ -1,1 +1,1 @@
-export * as fn from "./functions.ts";
+export * as fn from "./function/mod.ts";
