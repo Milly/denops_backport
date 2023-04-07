@@ -2,7 +2,7 @@ import { execute } from "https://deno.land/x/denops_std@v4.1.1/helper/execute.ts
 import type { Denops } from "https://deno.land/x/denops_std@v4.1.1/mod.ts";
 import { generateUniqueString } from "https://deno.land/x/denops_std@v4.1.1/util.ts";
 
-const cacheKey = Symbol("denops_backport/setcmdline");
+const cacheKey = "denops_backport/function/setcmdline@2";
 
 async function ensurePrerequisites(denops: Denops): Promise<string> {
   if (typeof denops.context[cacheKey] === "string") {

@@ -9,7 +9,7 @@ export {
   setSilent,
 } from "https://deno.land/x/denops_std@v4.1.1/helper/echo.ts";
 
-const cacheKey = Symbol("denops_backport/echo");
+const cacheKey = "denops_backport/helper/echo@2";
 
 async function ensurePrerequisites(denops: Denops): Promise<string> {
   if (typeof denops.context[cacheKey] === "string") {
