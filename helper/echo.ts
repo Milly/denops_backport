@@ -3,12 +3,6 @@ import { execute } from "https://deno.land/x/denops_std@v4.1.6/helper/execute.ts
 import type { Denops } from "https://deno.land/x/denops_std@v4.1.6/mod.ts";
 import { generateUniqueString } from "https://deno.land/x/denops_std@v4.1.6/util.ts";
 
-// Re-export because version dependent
-export {
-  getSilent,
-  setSilent,
-} from "https://deno.land/x/denops_std@v4.1.6/helper/echo.ts";
-
 const cacheKey = "denops_backport/helper/echo@2";
 
 async function ensurePrerequisites(denops: Denops): Promise<string> {
