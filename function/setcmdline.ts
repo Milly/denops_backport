@@ -1,6 +1,6 @@
-import { execute } from "https://deno.land/x/denops_std@v4.1.1/helper/execute.ts";
-import type { Denops } from "https://deno.land/x/denops_std@v4.1.1/mod.ts";
-import { generateUniqueString } from "https://deno.land/x/denops_std@v4.1.1/util.ts";
+import { execute } from "https://deno.land/x/denops_std@v4.1.6/helper/execute.ts";
+import type { Denops } from "https://deno.land/x/denops_std@v4.1.6/mod.ts";
+import { generateUniqueString } from "https://deno.land/x/denops_std@v4.1.6/util.ts";
 
 const cacheKey = "denops_backport/function/setcmdline@2";
 
