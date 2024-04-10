@@ -1,7 +1,7 @@
-import { getSilent } from "https://deno.land/x/denops_std@v4.1.6/helper/echo.ts";
-import { execute } from "https://deno.land/x/denops_std@v4.1.6/helper/execute.ts";
-import type { Denops } from "https://deno.land/x/denops_std@v4.1.6/mod.ts";
-import { generateUniqueString } from "https://deno.land/x/denops_std@v4.1.6/util.ts";
+import { getSilent } from "https://deno.land/x/denops_std@v5.3.0/helper/echo.ts";
+import { execute } from "https://deno.land/x/denops_std@v5.3.0/helper/execute.ts";
+import type { Denops } from "https://deno.land/x/denops_std@v5.3.0/mod.ts";
+import { generateUniqueString } from "https://deno.land/x/denops_std@v5.3.0/util.ts";
 
 const cacheKey = "denops_backport/helper/echo@2";
 
