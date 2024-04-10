@@ -1,7 +1,7 @@
-import { getSilent } from "https://deno.land/x/denops_std@v5.3.0/helper/echo.ts";
-import { execute } from "https://deno.land/x/denops_std@v5.3.0/helper/execute.ts";
-import type { Denops } from "https://deno.land/x/denops_std@v5.3.0/mod.ts";
-import { generateUniqueString } from "https://deno.land/x/denops_std@v5.3.0/util.ts";
+import { getSilent } from "https://deno.land/x/denops_std@v6.4.0/helper/echo.ts";
+import { execute } from "https://deno.land/x/denops_std@v6.4.0/helper/execute.ts";
+import type { Denops } from "https://deno.land/x/denops_std@v6.4.0/mod.ts";
+import { ulid } from "https://deno.land/std@0.221.0/ulid/mod.ts";
 
 const cacheKey = "denops_backport/helper/echo@2";
 
@@ -9,7 +9,7 @@ async function ensurePrerequisites(denops: Denops): Promise<string> {
   if (typeof denops.context[cacheKey] === "string") {
     return denops.context[cacheKey];
   }
-  const suffix = generateUniqueString();
+  const suffix = ulid();
   denops.context[cacheKey] = suffix;
   const script = `
   function! DenopsBackport_echomsg_${suffix}(message, highlight) abort
